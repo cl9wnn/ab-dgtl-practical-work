@@ -21,7 +21,7 @@
 
 ## Схема
 
-![Схема](architecture_schema.png)
+![Схема](docs/diagrams/architecture_diagram.png)
 
 ## Развертывание и конфигурирование приложения
 
