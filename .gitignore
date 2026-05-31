@@ -367,3 +367,11 @@ FodyWeavers.xsd
 # Ignore configuration file with API keys
 appsettings.Secrets.json
 src/PracticalWork.Library.Web/appsettings.Development.json
+
+# Coverage reports
+TestResults/
+coveragereport/
+coverage/
+*.cobertura.xml
+*.coverage
+*.coverlet.json
