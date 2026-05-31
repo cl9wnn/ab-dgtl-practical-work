@@ -17,7 +17,10 @@
     <Project Path="src/PracticalWork.Library.Data.PostgreSql/PracticalWork.Library.Data.PostgreSql.csproj" />
     <Project Path="src/PracticalWork.Library.MessageBroker.Kafka/PracticalWork.Library.MessageBroker.Kafka.csproj" />
     <Project Path="src/PracticalWork.Library.Notification.Email/PracticalWork.Library.Notification.Email.csproj" />
-    <Project Path="src\PracticalWork.Library.Clients.Http\PracticalWork.Library.Clients.Http.csproj" Type="Classic C#" />
+    <Project Path="src/PracticalWork.Library.Clients.Http/PracticalWork.Library.Clients.Http.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/PracticalWork.Library.UnitTests/PracticalWork.Library.UnitTests.csproj"  />
   </Folder>
   <Folder Name="/utils/">
     <Project Path="utils/PracticalWork.Library.Data.PostgreSql.Migrator/PracticalWork.Library.Data.PostgreSql.Migrator.csproj" />
