@@ -35,7 +35,7 @@ public sealed class LibraryActivityReportCsvService
         foreach (var log in rows)
         {
             csv.WriteField(log.EventType);
-            csv.WriteField(log.EventDate.ToString("yyyy-MM-dd HH:mm:ss"));
+            csv.WriteField(log.EventDate.ToString("yyyy-MM-dd"));
             csv.WriteField(log.Metadata);
             csv.NextRecord();
         }

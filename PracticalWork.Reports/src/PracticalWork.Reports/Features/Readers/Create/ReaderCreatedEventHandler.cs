@@ -23,7 +23,7 @@ public class ReaderCreatedEventHandler: IEventHandler<ReaderCreatedEvent>
     public async Task HandleAsync(ReaderCreatedEvent message, CancellationToken cancellationToken)
     {
         var metadata = JsonDocument.Parse(JsonSerializer.Serialize(message));
-        var activityLog = ActivityLog.Create(ActivityEventType.BookCreated, metadata);
+        var activityLog = ActivityLog.Create(ActivityEventType.ReaderCreated, metadata);
         
         await _activityLogRepository.Add(activityLog, cancellationToken, readerId: message.ReaderId);
     }
