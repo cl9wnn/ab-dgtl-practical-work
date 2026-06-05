@@ -17,14 +17,15 @@ public class ReaderServiceTests
 {
     private readonly Mock<IReaderRepository> _readerRepository = new();
     private readonly Mock<ICacheService> _cacheService = new();
-    private readonly Mock<IOptions<ReadersCacheOptions>> _options = new();
     private readonly Mock<IMessageBrokerProducer> _kafkaProducer = new();
 
     private readonly ReaderService _service;
 
     public ReaderServiceTests()
     {
-        _options.Setup(x => x.Value)
+        var readerOptionsMock = new Mock<IOptions<ReadersCacheOptions>>();
+
+        readerOptionsMock.Setup(x => x.Value)
             .Returns(new ReadersCacheOptions
             {
                 ReadersCacheVersionPrefix = "readers-v1",
@@ -38,7 +39,7 @@ public class ReaderServiceTests
         _service = new ReaderService(
             _readerRepository.Object,
             _cacheService.Object,
-            _options.Object,
+            readerOptionsMock.Object,
             _kafkaProducer.Object);
     }
     
