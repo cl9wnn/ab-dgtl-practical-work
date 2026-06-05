@@ -16,6 +16,9 @@
     <Project Path="src/PracticalWork.Reports.Data.PostgreSql/PracticalWork.Reports.Data.PostgreSql.csproj" />
     <Project Path="src/PracticalWork.Reports.MessageBroker.Kafka/PracticalWork.Reports.MessageBroker.Kafka.csproj" />
   </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/PracticalWork.Reports.UnitTests/PracticalWork.Reports.UnitTests.csproj" />
+  </Folder>
   <Folder Name="/utils/">
     <Project Path="utils/PracticalWork.Reports.Data.PostgreSql.Migrator/PracticalWork.Reports.Data.PostgreSql.Migrator.csproj" />
   </Folder>
